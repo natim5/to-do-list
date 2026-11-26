@@ -1,4 +1,4 @@
-name: Deploy Daymark to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -11,21 +11,21 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out repository
         uses: actions/checkout@v6
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Build static site and sitemap
-        run: python3 build_site.py "${{ steps.pages.outputs.base_url }}"
-      - name: Upload site
+        run: python3 scripts/build_site.py "${{ steps.pages.outputs.base_url }}"
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: dist
