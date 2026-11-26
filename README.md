@@ -39,6 +39,3 @@ In the repository, open **Settings â†’ Pages** and set **Build and deployment â†
 
 To build the site locally, run `python3 scripts/build_site.py https://YOUR-USERNAME.github.io/YOUR-REPOSITORY`. The generated website files are placed in `dist/`.
 
-## License
-
-MIT. See [LICENSE](LICENSE).
