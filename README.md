@@ -14,7 +14,7 @@ A simple, responsive task manager built with HTML, CSS, and JavaScript. Create t
 - Responsive design for mobile and desktop
 - No package installation, account, or backend required
 - GitHub Pages deployment through GitHub Actions
-- A sitemap and `robots.txt` generated with the correct Pages URL during deployment
+- A root `sitemap.xml`, plus a deployment-generated sitemap and `robots.txt` using the configured Pages URL
 
 ## Run locally
 
@@ -39,3 +39,6 @@ In the repository, open **Settings â†’ Pages** and set **Build and deployment â†
 
 To build the site locally, run `python3 scripts/build_site.py https://YOUR-USERNAME.github.io/YOUR-REPOSITORY`. The generated website files are placed in `dist/`.
 
+## License
+
+MIT. See [LICENSE](LICENSE).
