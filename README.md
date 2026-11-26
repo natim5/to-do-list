@@ -1,4 +1,4 @@
-# Daymark — Todo List
+8t# Daymark — Todo List
 
 A simple, responsive task manager built with HTML, CSS, and JavaScript. Create tasks, keep notes, set due dates and priorities, track completion, and find tasks with search and filters.
 
@@ -38,7 +38,3 @@ git push -u origin main
 In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. Then check the **Actions** tab for the deployment. The workflow generates `sitemap.xml` and `robots.txt` using GitHub's configured Pages base URL, so it works with either a user site or a repository subpath. The deployed sitemap is available at `<your-pages-url>/sitemap.xml`.
 
 To build the site locally, run `python3 scripts/build_site.py https://YOUR-USERNAME.github.io/YOUR-REPOSITORY`. The generated website files are placed in `dist/`.
-
-## License
-
-MIT. See [LICENSE](LICENSE).
